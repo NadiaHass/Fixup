@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/client_nav"
+    app:startDestination="@id/homeClientFragment">
+
+    <fragment
+        android:id="@+id/homeClientFragment"
+        android:name="com.nadiahassouni.fixup.ui.client.HomeClientFragment"
+        android:label="fragment_home_client"
+        tools:layout="@layout/fragment_home_client" >
+        <action
+            android:id="@+id/action_homeClientFragment_to_profileReclamationsFragment"
+            app:destination="@id/profileReclamationsFragment" />
+        <action
+            android:id="@+id/action_homeClientFragment_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileReclamationsFragment"
+        android:name="com.nadiahassouni.fixup.ui.client.ProfileReclamationsFragment"
+        android:label="fragment_profile_reclamations"
+        tools:layout="@layout/fragment_profile_reclamations" >
+        <action
+            android:id="@+id/action_profileReclamationsFragment_to_profileFragment"
+            app:destination="@id/profileFragment2" />
+        <action
+            android:id="@+id/action_profileReclamationsFragment_to_addReclamationFragment"
+            app:destination="@id/addReclamationFragment" />
+        <action
+            android:id="@+id/action_profileReclamationsFragment_to_reclamationFragment"
+            app:destination="@id/reclamationFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.nadiahassouni.fixup.ui.agent.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment2_to_updatePersonalInfoFragment"
+            app:destination="@id/updatePersonalInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReclamationFragment"
+        android:name="com.nadiahassouni.fixup.ui.client.AddReclamationFragment"
+        android:label="fragment_add_reclamation"
+        tools:layout="@layout/fragment_add_reclamation" />
+    <fragment
+        android:id="@+id/reclamationFragment2"
+        android:name="com.nadiahassouni.fixup.ui.client.ReclamationFragment"
+        android:label="fragment_reclamation"
+        tools:layout="@layout/fragment_reclamation" />
+    <fragment
+        android:id="@+id/updatePersonalInfoFragment"
+        android:name="com.nadiahassouni.fixup.ui.agent.UpdatePersonalInfoFragment"
+        android:label="fragment_update_personal_info"
+        tools:layout="@layout/fragment_update_personal_info" />
+</navigation>

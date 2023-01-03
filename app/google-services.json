@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "835448573162",
+    "project_id": "fixup-da1a2",
+    "storage_bucket": "fixup-da1a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835448573162:android:ddd6104e63599a00c5db93",
+        "android_client_info": {
+          "package_name": "com.nadiahassouni.fixup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835448573162-pmsbfqiin7eoofe5uqapu9lcqp2emfls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGv406MpkEvgyEyUHLbHUtTTRlNwp_BwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835448573162-pmsbfqiin7eoofe5uqapu9lcqp2emfls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

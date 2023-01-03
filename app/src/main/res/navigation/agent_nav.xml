@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agent_nav"
+    app:startDestination="@id/homeAgentFragment">
+
+    <fragment
+        android:id="@+id/homeAgentFragment"
+        android:name="com.nadiahassouni.fixup.ui.agent.HomeAgentFragment"
+        android:label="fragment_home_agent"
+        tools:layout="@layout/fragment_home_agent" >
+        <action
+            android:id="@+id/action_homeClientFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_profileReclamationsFragment_to_reclamationFragment"
+            app:destination="@id/reclamationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.nadiahassouni.fixup.ui.agent.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/reclamationFragment"
+        android:name="com.nadiahassouni.fixup.ui.client.ReclamationFragment"
+        android:label="fragment_reclamation"
+        tools:layout="@layout/fragment_reclamation" />
+</navigation>
